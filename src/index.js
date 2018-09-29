@@ -7,5 +7,7 @@ module.exports = function check(str, bracketsConfig) {
       str = str.replace(bracketsConfig[i][0]+bracketsConfig[i][1], '');
     }
   }
-  return (str.length == 0);
+ if (str.length == 0)
+ return true;
+ else return false;
 }
